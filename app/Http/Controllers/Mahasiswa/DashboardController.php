@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Borrowing;
 use App\Models\Book;
+use App\Models\ActivityLog;
 use App\Models\Wishlist;
 
 class DashboardController extends Controller
@@ -33,6 +34,8 @@ class DashboardController extends Controller
             'wishlist_count'    => Wishlist::where('user_id', $user->id)->count(),
             'borrowing_history' => Borrowing::where('user_id', $user->id)->count(),
         ];
+
+        $recentActivities = ActivityLog::with('user')->latest()->take(5)->get();
 
         // Mengambil data rekomendasi buku, lengkap dengan penulisnya
         $recommendations = Book::with('author')->inRandomOrder()->take(3)->get();

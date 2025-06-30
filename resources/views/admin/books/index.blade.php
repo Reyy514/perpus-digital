@@ -7,10 +7,10 @@
                 </h2>
                 <p class="mt-1 text-sm text-neutral/70">Kelola semua koleksi buku perpustakaan.</p>
             </div>
-            <a href="{{ route('admin.books.create') }}" class="w-full sm:w-auto flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold text-white shadow-lg transition-all duration-300 transform hover:-translate-y-1 bg-primary hover:bg-opacity-90 shadow-primary/40">
+            <x-primary-button-link href="{{ route('admin.books.create') }}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-circle"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
-                Tambah Buku Baru
-            </a>
+                <span>Tambah Buku Baru</span>
+            </x-primary-button-link>
         </div>
     </x-slot>
 
@@ -48,17 +48,19 @@
                                             </div>
                                             <div class="ml-4">
                                                 <div class="text-sm font-medium text-neutral">{{ $book->title }}</div>
-                                                <div class="text-sm text-neutral/70">{{ $book->author }}</div>
+                                                <div class="text-sm text-neutral/70">{{ $book->author->name ?? 'N/A' }}</div>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-neutral/80">{{ $book->category->name ?? 'N/A' }}</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-neutral/80">{{ $book->stock }}</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                        <a href="{{ route('admin.books.show', $book) }}" class="text-primary hover:underline">Lihat</a>
-                                        <a href="{{ route('admin.books.edit', $book) }}" class="text-secondary hover:underline ml-4">Edit</a>
-                                        <button @click="dialog = true" class="text-error hover:underline ml-4">Hapus</button>
-
+                                        <div class="flex items-center justify-end gap-4">
+                                            <a href="{{ route('admin.books.show', $book) }}" class="text-primary hover:underline">Lihat</a>
+                                            <a href="{{ route('admin.books.edit', $book) }}" class="text-secondary hover:underline">Edit</a>
+                                            <button @click="dialog = true" class="text-error hover:underline">Hapus</button>
+                                        </div>
+                                        
                                         <!-- Dialog Konfirmasi Hapus -->
                                         <template x-teleport="body">
                                             <div x-show="dialog" @click.away="dialog = false" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" x-cloak>

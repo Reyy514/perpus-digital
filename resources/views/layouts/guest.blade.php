@@ -22,7 +22,7 @@
                 <div class="w-full max-w-sm">
                     <div class="mb-8 text-center">
                         <a href="/">
-                            <x-application-logo class="w-20 h-20 mx-auto fill-current text-primary" />
+                            <x-application-logo class="w-20 h-20 mx-5 fill-current text-primary absolute top-0 left-0" />
                         </a>
                     </div>
                     {{ $slot }}

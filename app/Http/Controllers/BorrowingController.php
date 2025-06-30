@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Book;
 use Illuminate\Http\Request;
 use App\Models\ActivityLog;
+use App\Models\Borrowing;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 
@@ -11,10 +12,26 @@ class BorrowingController extends Controller
 {
     public function index()
     {
-        $user = Auth::user();
-        $activeBorrowings = $user->borrowings()->whereNull('returned_at')->with('book')->get();
-        $historyBorrowings = $user->borrowings()->whereNotNull('returned_at')->with('book')->latest()->get();
-        return view('mahasiswa.borrowings.index', compact('activeBorrowings', 'historyBorrowings'));
+        $userId = Auth::id();
+    
+        // SOLUSI: Menggunakan ->paginate()
+        $activeBorrowings = Borrowing::where('user_id', $userId)
+            ->whereNull('returned_at')
+            ->with('book.author')
+            ->latest('borrowed_at')
+            ->paginate(5, ['*'], 'aktif'); // Menghasilkan Paginator
+    
+        // SOLUSI: Menggunakan ->paginate()
+        $historyBorrowings = Borrowing::where('user_id', $userId)
+            ->whereNotNull('returned_at')
+            ->with('book.author')
+            ->latest('returned_at')
+            ->paginate(10, ['*'], 'riwayat'); // Menghasilkan Paginator
+    
+        return view('mahasiswa.borrowings.index', compact(
+            'activeBorrowings',
+            'historyBorrowings'
+        ));
     }
 
     public function store(Request $request, Book $book)

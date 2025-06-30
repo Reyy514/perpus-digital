@@ -13,12 +13,22 @@ return new class extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('author');
+            $table->string('title')->unique();
+            
+            // FIX: Tambahkan kolom 'slug' yang dibutuhkan oleh Seeder dan Controller
+            $table->string('slug')->unique(); 
+            
+            // Kolom ini akan dimodifikasi oleh migrasi berikutnya, 
+            // jadi untuk sementara didefinisikan sebagai string biasa.
+            $table->string('author'); 
+            
+            // Kolom ini juga akan ditambahkan dan dihapus oleh migrasi lain.
+            // Biarkan seperti ini agar urutan migrasi Anda tetap valid.
             $table->string('category')->nullable();
-            $table->text('description');
+            
+            $table->text('description')->nullable();
             $table->string('cover_image_url')->nullable();
-            $table->integer('stock')->default(0);
+            $table->unsignedInteger('stock')->default(0);
             $table->timestamps();
         });
     }
