@@ -48,7 +48,7 @@
                 </div>
             @else
                 <div class="text-center py-16 bg-base-100 rounded-lg shadow-md">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-dashed mx-auto text-neutral/30"><path d="M12 20v-5M12 9V4"/><path d="M12 2h2.5a2.5 2.5 0 0 1 2.22 1.66l.23 1.05a2.5 2.5 0 0 0 2.22 1.66H19a2 2 0 0 1 2 2v2.5a2.5 2.5 0 0 1-1.66 2.22l-1.05.23a2.5 2.5 0 0 0-1.66 2.22V19a2 2 0 0 1-2 2h-2.5a2.5 2.5 0 0 1-2.22-1.66l-.23-1.05a2.5 2.5 0 0 0-2.22-1.66H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h2.5a2.5 2.5 0 0 1 2.22 1.66l.23 1.05A2.5 2.5 0 0 0 9.5 7H12Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-dashed-icon lucide-book-dashed mx-auto text-neutral/30"><path d="M12 17h1.5"/><path d="M12 22h1.5"/><path d="M12 2h1.5"/><path d="M17.5 22H19a1 1 0 0 0 1-1"/><path d="M17.5 2H19a1 1 0 0 1 1 1v1.5"/><path d="M20 14v3h-2.5"/><path d="M20 8.5V10"/><path d="M4 10V8.5"/><path d="M4 19.5V14"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H8"/><path d="M8 22H6.5a1 1 0 0 1 0-5H8"/></svg>
                     <h3 class="mt-4 text-xl font-semibold text-neutral">Tidak Ada Buku Ditemukan</h3>
                     <p class="mt-1 text-neutral/70">Coba kata kunci pencarian atau filter yang berbeda.</p>
                 </div>
