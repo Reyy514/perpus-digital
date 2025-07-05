@@ -28,7 +28,7 @@ Proyek ini dilengkapi dengan berbagai fitur untuk memenuhi kebutuhan perpustakaa
 
 ---
 
-## 🛠️ Tumpukan Teknologi (Tech Stack)
+## 🛠️ Tech Stack
 
 Proyek ini dibangun menggunakan teknologi modern dan andal untuk memastikan performa dan skalabilitas.
 
@@ -49,7 +49,7 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
 
 1.  **Clone Repositori**
     ```bash
-    git clone [https://github.com/username-anda/perpustakaan-digital-pines.git](https://github.com/username-anda/perpustakaan-digital-pines.git)
+    git clone [https://github.com/username-anda/perpustakaan-digital-pines.git](https://github.com/username-anda/perpustakaan-digital-pines.git)](https://github.com/Reyy514/perpus-digital.git)
     cd perpustakaan-digital-pines
     ```
 
