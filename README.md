@@ -49,7 +49,7 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
 
 1.  **Clone Repositori**
     ```bash
-    git clone [https://github.com/username-anda/perpustakaan-digital-pines.git](https://github.com/username-anda/perpustakaan-digital-pines.git)](https://github.com/Reyy514/perpus-digital.git)
+    git clone [https://github.com/username-anda/perpustakaan-digital-pines.git](https://github.com/username-anda/perpustakaan-digital-pines.git)
     cd perpustakaan-digital-pines
     ```
 
@@ -101,12 +101,12 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
 
 Proyek ini dikembangkan dan dikelola oleh tim yang berdedikasi.
 
-| Foto Profil | Nama | NIM | GitHub |
-| :---: | :--- | :---: | :---: |
-| <img src="https://github.com/Reyy514.png?size=100" width="100" alt="Foto profil Anda"> | **Reyfaldi Ilham Nugraha** | `[241351075]` | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Reyy514) |
-| <img src="https://github.com/molip212.png?size=100" width="100" alt="Foto profil Anggota 2"> | **Muhammad Alif** | `[241351093]` | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/molip212) |
-| <img src="https://github.com/username-anggota-3.png?size=100" width="100" alt="Foto profil Anggota 3"> | **[Nama Anggota 3]** | `[NIM Anggota 3]` | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/username-anggota-3) |
-| <img src="https://github.com/username-anggota-4.png?size=100" width="100" alt="Foto profil Anggota 4"> | **[Nama Anggota 4]** | `[NIM Anggota 4]` | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/username-anggota-4) |
+| Foto Profil | Nama | NIM | Peran | GitHub |
+| :---: | :--- | :---: | :--- | :---: |
+| <img src="https://github.com/Reyy514?size=100" width="100" alt="Foto profil Anda"> | **Reyfaldi Ilham Nugraha** | `241351075` | Project Lead | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Reyy514) |
+| <img src="https://github.com/molip212.png?size=100" width="100" alt="Foto profil Anggota 2"> | **Muhammad Alif** | `241351093` | Fitur Peminjaman Buku | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/molip212) |
+| <img src="https://github.com/username-anggota-3.png?size=100" width="100" alt="Foto profil Anggota 3"> | **[Nama Anggota 3]** | `[NIM Anggota 3]` | Frontend Dev | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/username-anggota-3) |
+| <img src="https://github.com/username-anggota-4.png?size=100" width="100" alt="Foto profil Anggota 4"> | **[Nama Anggota 4]** | `[NIM Anggota 4]` | UI/UX & Testing | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/username-anggota-4) |
 
 ---
 <p align="center">
