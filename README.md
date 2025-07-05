@@ -49,7 +49,7 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
 
 1.  **Clone Repositori**
     ```bash
-    git clone [https://github.com/username-anda/perpustakaan-digital-pines.git](https://github.com/username-anda/perpustakaan-digital-pines.git)
+    git clone [https://github.com/username-anda/perpustakaan-digital-pines.git](https://github.com/username-anda/perpustakaan-digital-pines.git)](https://github.com/Reyy514/perpus-digital.git)
     cd perpustakaan-digital-pines
     ```
 
@@ -103,8 +103,8 @@ Proyek ini dikembangkan dan dikelola oleh tim yang berdedikasi.
 
 | Foto Profil | Nama | NIM | GitHub |
 | :---: | :--- | :---: | :---: |
-| <img src="https://github.com/Reyy514.png?size=100" width="100" alt="Foto profil Anda"> | **Reyfaldi Ilham Nugraha** | `241351075` | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Reyy514) |
-| <img src="https://github.com/username-anggota-2.png?size=100" width="100" alt="Foto profil Anggota 2"> | **[Nama Anggota 2]** | `[NIM Anggota 2]` | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/username-anggota-2) |
+| <img src="https://github.com/Reyy514.png?size=100" width="100" alt="Foto profil Anda"> | **Reyfaldi Ilham Nugraha** | `[241351075]` | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Reyy514) |
+| <img src="https://github.com/molip212.png?size=100" width="100" alt="Foto profil Anggota 2"> | **Muhammad Alif** | `[241351093]` | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/molip212) |
 | <img src="https://github.com/username-anggota-3.png?size=100" width="100" alt="Foto profil Anggota 3"> | **[Nama Anggota 3]** | `[NIM Anggota 3]` | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/username-anggota-3) |
 | <img src="https://github.com/username-anggota-4.png?size=100" width="100" alt="Foto profil Anggota 4"> | **[Nama Anggota 4]** | `[NIM Anggota 4]` | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/username-anggota-4) |
 
