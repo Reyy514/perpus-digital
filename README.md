@@ -105,8 +105,8 @@ Proyek ini dikembangkan dan dikelola oleh tim yang berdedikasi.
 | :---: | :--- | :---: | :--- | :---: |
 | <img src="https://github.com/Reyy514.png?size=100" width="100" alt="Foto profil Anda"> | **Reyfaldi Ilham Nugraha** | `241351075` | Project Lead | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Reyy514) |
 | <img src="https://github.com/molip212.png?size=100" width="100" alt="Foto profil Anggota 2"> | **Muhammad Alif** | `241351093` | Fitur Peminjaman Buku | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/molip212) |
-| <img src="https://github.com/username-anggota-3.png?size=100" width="100" alt="Foto profil Anggota 3"> | **[Nama Anggota 3]** | `[NIM Anggota 3]` | Frontend Dev | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/username-anggota-3) |
-| <img src="https://github.com/username-anggota-4.png?size=100" width="100" alt="Foto profil Anggota 4"> | **[Nama Anggota 4]** | `[NIM Anggota 4]` | UI/UX & Testing | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/username-anggota-4) |
+| <img src="https://github.com/anida24.png?size=100" width="100" alt="Foto profil Anggota 3"> | **Anida Nursajdziyah** | `241351055` | Kategori Buku | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/anida24) |
+| <img src="https://github.com/firkhoir.png?size=100" width="100" alt="Foto profil Anggota 4"> | **Zafira Fitria Al Khoiri** | `241351054` | Manajemen Buku | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/firkhoir) |
 
 ---
 <p align="center">
