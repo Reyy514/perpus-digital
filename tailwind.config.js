@@ -17,13 +17,6 @@ export default {
             fontFamily: {
                 sans: ["Inter", ...defaultTheme.fontFamily.sans],
             },
-            // =================================================================
-            // INI ADALAH PERBAIKAN UTAMA
-            // Sekarang kita memberitahu Tailwind untuk MENGGUNAKAN CSS Variables
-            // yang kita definisikan di dalam plugin di bawah.
-            // Sintaks `hsl(var(...) / <alpha-value>)` memastikan opacity
-            // seperti `bg-primary/50` tetap berfungsi.
-            // =================================================================
             colors: {
                 primary: "hsl(var(--primary) / <alpha-value>)",
                 secondary: "hsl(var(--secondary) / <alpha-value>)",
@@ -44,11 +37,9 @@ export default {
     plugins: [
         forms,
         typography,
-        // Plugin ini MENDEFINISIKAN nilai variabel untuk setiap tema
         function ({ addBase, theme }) {
             addBase({
                 ":root": {
-                    // Definisi Warna untuk Light Mode (Default)
                     "--primary": "255 69% 65%", // #7F5AF0
                     "--secondary": "35 100% 70%", // #FFB86B
                     "--accent": "163 60% 72%", // #72DEC2
@@ -63,7 +54,6 @@ export default {
                     "--error": "354 79% 59%", // #E74C3C
                 },
                 ".dark": {
-                    // Definisi Warna untuk Dark Mode
                     "--primary": "252 94% 85%", // #C4B5FD
                     "--secondary": "30 100% 87%", // #FFDABF
                     "--accent": "151 58% 77%", // #9EEBCF
