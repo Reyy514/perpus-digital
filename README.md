@@ -49,8 +49,8 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
 
 1.  **Clone Repositori**
     ```bash
-    git clone [https://github.com/username-anda/perpustakaan-digital-pines.git](https://github.com/username-anda/perpustakaan-digital-pines.git)
-    cd perpustakaan-digital-pines
+    git clone ([https://github.com/username-anda/perpustakaan-digital-pines.git)](https://github.com/Reyy514/perpus-digital.git)
+    cd perpus-digital
     ```
 
 2.  **Install Dependensi**
