@@ -1,61 +1,114 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
+  <h1 style="font-size: 3em; font-weight: bold;">Sistem Perpustakaan Digital - Pines</h1>
+  <p>
+    Sebuah platform perpustakaan digital modern yang dibangun dengan Laravel. Kelola, pinjam, dan jelajahi buku dengan mudah.
+  </p>
+</div>
+
+---
+
+## 🚀 Fitur Utama
+
+Proyek ini dilengkapi dengan berbagai fitur untuk memenuhi kebutuhan perpustakaan modern, baik dari sisi Admin maupun Mahasiswa.
+
+### Untuk Admin 👨‍💼
+-   **📚 Manajemen Buku (CRUD):** Tambah, lihat, edit, dan hapus data buku beserta detailnya seperti judul, penulis, stok, dan sampul.
+-   **🗂️ Manajemen Kategori & Penulis:** Mengelola kategori buku dan data penulis secara dinamis.
+-   **📊 Dasbor Admin:** Tampilan ringkas statistik perpustakaan, termasuk jumlah buku, pengguna, dan aktivitas peminjaman.
+-   **📜 Log Aktivitas:** Memantau aktivitas penting yang terjadi di dalam sistem.
+-   **👥 Manajemen Pengguna:** Mengelola akun pengguna, termasuk fitur untuk men-suspend akun.
+
+### Untuk Mahasiswa 🎓
+-   **🔍 Katalog Buku:** Menjelajahi koleksi buku dengan fitur pencarian (berdasarkan judul/penulis) dan filter berdasarkan kategori.
+-   **🔄 Sistem Peminjaman:** Mahasiswa dapat meminjam buku yang tersedia dan melihat riwayat peminjaman mereka.
+-   **❤️ Wishlist:** Menambahkan buku yang diminati ke dalam daftar keinginan pribadi.
+-   **⭐ Ulasan & Rating:** Memberikan rating dan ulasan pada buku yang pernah dipinjam untuk membantu pengguna lain.
+-   **🏠 Dasbor Mahasiswa:** Halaman personal yang menampilkan buku yang sedang dipinjam, statistik pribadi, dan rekomendasi buku.
+-   **👤 Profil Pengguna:** Mengelola informasi profil dan keamanan akun.
+
+---
+
+## 🛠️ Tumpukan Teknologi (Tech Stack)
+
+Proyek ini dibangun menggunakan teknologi modern dan andal untuk memastikan performa dan skalabilitas.
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel"/>
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP"/>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"/>
+  <img src="https://img.shields.io/badge/Alpine.js-8BC0D0?style=for-the-badge&logo=alpine.js&logoColor=white" alt="Alpine.js"/>
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
 </p>
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## ⚙️ Instalasi & Setup
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal Anda:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1.  **Clone Repositori**
+    ```bash
+    git clone [https://github.com/username-anda/perpustakaan-digital-pines.git](https://github.com/username-anda/perpustakaan-digital-pines.git)
+    cd perpustakaan-digital-pines
+    ```
 
-## Learning Laravel
+2.  **Install Dependensi**
+    ```bash
+    composer install
+    npm install
+    ```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+3.  **Setup Environment**
+    Salin file `.env.example` menjadi `.env` dan sesuaikan konfigurasinya, terutama untuk koneksi database.
+    ```bash
+    cp .env.example .env
+    ```
+    Buka file `.env` dan atur `DB_DATABASE`, `DB_USERNAME`, dan `DB_PASSWORD`.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+4.  **Generate Application Key**
+    ```bash
+    php artisan key:generate
+    ```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+5.  **Jalankan Migrasi & Seeder**
+    Perintah ini akan membuat semua tabel database dan mengisinya dengan data awal (termasuk akun admin default dan data buku).
+    ```bash
+    php artisan migrate:fresh --seed
+    ```
 
-## Laravel Sponsors
+6.  **Buat Symbolic Link untuk Storage**
+    Agar file yang diunggah (seperti sampul buku) dapat diakses secara publik.
+    ```bash
+    php artisan storage:link
+    ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+7.  **Compile Aset Frontend**
+    ```bash
+    npm run dev
+    ```
 
-### Premium Partners
+8.  **Jalankan Development Server**
+    Buka terminal baru dan jalankan perintah ini.
+    ```bash
+    php artisan serve
+    ```
+    Aplikasi sekarang dapat diakses di `http://127.0.0.1:8000`.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## 👥 Tim Pengembang
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Proyek ini dikembangkan dan dikelola oleh tim yang berdedikasi.
 
-## Code of Conduct
+| Foto Profil | Nama | Peran | GitHub |
+| :---: | :--- | :--- | :---: |
+| <img src="https://github.com/username-anda.png?size=100" width="100" alt="Foto profil Anda"> | **[Nama Anda]** | Project Lead | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/username-anda) |
+| <img src="https://github.com/username-anggota-2.png?size=100" width="100" alt="Foto profil Anggota 2"> | **[Nama Anggota 2]** | Backend Dev | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/username-anggota-2) |
+| <img src="https://github.com/username-anggota-3.png?size=100" width="100" alt="Foto profil Anggota 3"> | **[Nama Anggota 3]** | Frontend Dev | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/username-anggota-3) |
+| <img src="https://github.com/username-anggota-4.png?size=100" width="100" alt="Foto profil Anggota 4"> | **[Nama Anggota 4]** | UI/UX & Testing | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/username-anggota-4) |
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+<p align="center">
+  Terima kasih telah mengunjungi repositori kami!
+</p>
